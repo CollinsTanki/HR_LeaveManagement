@@ -2,8 +2,8 @@
   <Folder Name="/src/" />
   <Folder Name="/src/API/" />
   <Folder Name="/src/Core/">
-    <Project Path="../../../../../../source/repos/HR_LeaveManagement/HR_LeaveManagement.Application/HR_LeaveManagement.Application.csproj" Id="ed60c673-4f68-4e3c-b0cf-c78396af4e52" />
-    <Project Path="../../../../../../source/repos/HR_LeaveManagement/HR_LeaveManagement.Domain/HR_LeaveManagement.Domain.csproj" Id="4da87043-97a8-4856-92da-72e3b3c4d2b0" />
+    <Project Path="HR_LeaveManagement.Application/HR_LeaveManagement.Application.csproj" />
+    <Project Path="HR_LeaveManagement.Domain/HR_LeaveManagement.Domain.csproj" />
   </Folder>
   <Folder Name="/src/Infrastructure/" />
   <Folder Name="/src/UI/" />

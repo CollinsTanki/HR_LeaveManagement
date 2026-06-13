@@ -10,7 +10,7 @@ namespace HR_LeaveManagement.Application.DTOs.LeaveRequest
     public class LeaveRequestListDto : BaseDto
     {
         public DateTime DateRequested { get; set; }
-        public DateTime Approved { get; set; }
+        public bool? Approved { get; set; }
 
     }
 }
