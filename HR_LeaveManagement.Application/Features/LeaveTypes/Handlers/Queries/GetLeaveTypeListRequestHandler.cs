@@ -1,4 +1,5 @@
-﻿using HR_LeaveManagement.Application.DTOs;
+﻿using AutoMapper;
+using HR_LeaveManagement.Application.DTOs;
 using HR_LeaveManagement.Application.Features.LeaveTypes.Requests;
 using HR_LeaveManagement.Application.Persistence.Contracts;
 using MediatR;
@@ -15,9 +16,9 @@ namespace HR_LeaveManagement.Application.Features.LeaveTypes.Handlers.Queries
     {
         private readonly ILeaveTypeRepository _leaveTypeRepository;
 
-        public GetLeaveTypeListRequestHandler(ILeaveTypeRepository leaveTypeRepository)
+        public GetLeaveTypeListRequestHandler(ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
         {
-           this._leaveTypeRepository = leaveTypeRepository;
+           _leaveTypeRepository = leaveTypeRepository;
         }
         public Task<List<LeaveTypeDto>> Handle(GetLeaveTypeListRequest request, CancellationToken cancellationToken)
         {
